@@ -11,16 +11,16 @@
 // Print
 // Print the ratios of positive, negative and zero values in the array. Each value should be printed on a separate line with  digits after the decimal. The function should not return a value.
 
-// Input Format
+// INPUT FORMAT
 
-// The first line contains an integer, , the size of the array.
-// The second line contains  space-separated integers that describe .
+// The first line contains an integer, n , the size of the array.
+// The second line contains n space-separated integers that describe arr[n].
 
 // Constraints
 // 0 < n <= 100
 // -100 <= arr[i] <= 100
 
-// Output Format
+//  OUTPUT FORMAT
 
 // Print the following  lines, each to  decimals:
 
@@ -44,7 +44,7 @@ function plusMinus(arr) {
     } else zeroCount += 1;
   }
   // console.log( 'pos:', posCount, 'neg:', negCount, 'zero:',zeroCount)
-
+  // FN will NOT return anything
   console.log((posCount / arr.length).toFixed(6));
   console.log((negCount / arr.length).toFixed(6));
   console.log((zeroCount / arr.length).toFixed(6));
